@@ -135,12 +135,12 @@ export default {
                 );
         },
         remove(student){
-            var url = 'http ://127.0.0.1:8000/api/student/${student.id}';
-            // var url = 'http://127.0.0.1:8000/api/student/' + student.id;
-            axios.delete(url);
-            alert("Deleted!!!");
-            this.StudentLoad();
-        }
+              var url = `http://127.0.0.1:8000/api/student/${student.id}`;
+              // var url = 'http://127.0.0.1:8000/api/student/'+ student.id;
+              axios.delete(url);
+              alert("Deleted");
+              this.StudentLoad();
+            }
     }
 }
 </script>
